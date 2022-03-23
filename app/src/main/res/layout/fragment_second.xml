@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/linear1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            android:text="Halo, " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/namaTxt"
+            android:text="Halo, " />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Umur"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:id="@+id/txt"
+        android:layout_below="@id/linear1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tahun Sekarang"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/txt"
+        android:id="@+id/sekarangEdit"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tahun Lahir"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/lahirEdit"
+        android:layout_below="@id/sekarangEdit"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/lahirEdit"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:text="Butt2on" />
+
+</RelativeLayout>
